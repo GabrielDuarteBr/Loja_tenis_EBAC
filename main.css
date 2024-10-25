@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #cbcd69;
+    align-items: center;
+    padding: 16px;
+}
+
+header li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    background-color: #abae4b;
+    border: #8c902e solid 2px;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+header li a {
+    text-decoration: none;
+    color: black;
+}
+
+.sobreAloja ul {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin-top: 16px;
+    list-style: none;
+}
+
+#sobre {
+    display: block;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+#sobre h2 {
+    margin-bottom: 16px;
+}
+
+#sobre p {
+    margin-top: 16px;
+}
+
+.produtos {
+    margin-top: 16px;
+}
+
+.produtos h2 {
+    margin-bottom: 16px;
+}
+
+.produtos ul {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    margin-top: 16px;
+}
+
+.produtos ul li {
+    list-style: none;
+    display:list-item;
+    margin: 2%;
+}
+
+.produtos ul li button {
+    width: 100%;
+    padding: 8px 0;
+    background-color: #e8e9ab;
+    border: #cbcd69 solid 2px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        width: 90%;
+    }
+    
+    .sobreAloja ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        list-style: none;
+        align-items: center;
+    }
+
+    .sobreAloja ul h2 {
+        font-size: 2em;
+    }
+
+    .sobreAloja ul p {
+        font-size: 1.5em;
+    }
+
+    .produtos ul {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        margin-top: 16px;
+        align-self: center;
+    }
+
+    .produtos ul li {
+        margin: 5%;
+    }
+
+    .produtos ul li img{
+        width: 100%;
+    }
+
+    .produtos ul li p {
+        font-size: 1.5em;
+    }
+
+    .produtos ul li button {
+        width: 100%;
+        padding: 16px 0;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 90%;
+    }
+    
+    .sobreAloja ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        list-style: none;
+        align-items: center;
+    }
+
+    .sobreAloja ul h2 {
+        font-size: 2em;
+    }
+
+    .sobreAloja ul p {
+        font-size: 1.5em;
+    }
+
+    .produtos ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        align-self: center;
+    }
+
+    .produtos ul li {
+        margin: 5%;
+    }
+
+    .produtos ul li img{
+        width: 100%;
+    }
+
+    .produtos ul li p {
+        font-size: 1.5em;
+    }
+
+    .produtos ul li button {
+        width: 100%;
+        padding: 16px 0;
+        font-size: 1.5em;
+    }
+}
+
